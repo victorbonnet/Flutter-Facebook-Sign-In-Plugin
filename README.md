@@ -2,7 +2,7 @@
 
 Flutter plugin implementing native Facebook sdks for authentication. This plugin works on iOS and Android.
 
-## Android Setup
+## Android Setup (The example app includes an example of the implementation)
 ### Step 1
 - In `android/app/src/main/res` create a new map called "values" (you can skip this if you already have this map). 
 - Create a new file in the "values" directory called "strings.xml" (you can skip this if you already have this file).
@@ -39,7 +39,7 @@ Flutter plugin implementing native Facebook sdks for authentication. This plugin
     </intent-filter>
 </activity>
 ```
-#### Here is a template of what the aplication tag should look like:
+#### Here is a template of what the application tag should look like:
 ```
 <application android:name="io.flutter.app.FlutterApplication" android:label="facebook_sign_in_example" android:icon="@mipmap/ic_launcher">
     <meta-data android:name="com.facebook.sdk.ApplicationId" 

@@ -6,17 +6,12 @@ Flutter plugin implementing native Facebook sdks for authentication. This plugin
 ### Step 1
 - In `android/app/src/main/res` create a new map called "values" (you can skip this if you already have this map). 
 - Create a new file in the "values" directory called "strings.xml" (you can skip this if you already have this file).
-- If you just created the "strings.xml" file, add the following code:
+- If you just created the "strings.xml" file, add the following code (leave out the "resources" tags if you got them already):
 ```
 <resources>
     <string name="facebook_app_id">XXX</string>
     <string name="fb_login_protocol_scheme">XXX</string>
 </resources>
-```
-- If you already had the "strings.xml" file, add the following code in the "resources" tags:
-```
-    <string name="facebook_app_id">XXX</string>
-    <string name="fb_login_protocol_scheme">fbXXX</string>
 ```
 - Replace the XXX with your Facebook app id (leave the "fb" prefix in the second string).
 ### Step 2

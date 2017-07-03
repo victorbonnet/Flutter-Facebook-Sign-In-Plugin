@@ -1,3 +1,5 @@
+# STILL IN DEVELOPMENT, DON'T USE FOR PROJECTS YET.
+
 # facebook_sign_in
 
 Flutter plugin implementing native Facebook sdks for authentication. This plugin works on iOS and Android.

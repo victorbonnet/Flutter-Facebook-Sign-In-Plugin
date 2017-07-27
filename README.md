@@ -65,6 +65,19 @@ Flutter plugin implementing native Facebook sdks for authentication. This plugin
 </application>
 ```
 
+
+## iPhone Setup
+### Step 1
+
+Follow the [Facebook Login for iOS](https://developers.facebook.com/docs/facebook-login/ios) instructions, steps 1-4, including:
+
+- Creating or selecting a Facebook app to link
+- Downloading the SDK
+- Adding Login Kit to your project in Xcode (run `$ open ios/Runner.xcodeproj/` to open your project in Xcode to add the SDK)
+- Add your bundle identifier
+- Enable Single Sign On (set to yes)
+- Configure your info.plist
+
 ## Getting Started
 
 For help getting started with Flutter, view our online

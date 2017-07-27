@@ -69,6 +69,10 @@ Flutter plugin implementing native Facebook sdks for authentication. This plugin
 ## iPhone Setup
 ### Step 1
 
+Set up a server-based redirect for Facebook's oauth to connect to, such as [Firebase](https://console.firebase.google.com/). 
+
+### Step 2
+
 Follow the [Facebook Login for iOS](https://developers.facebook.com/docs/facebook-login/ios) instructions, steps 1-4, including:
 
 - Creating or selecting a Facebook app to link

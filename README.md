@@ -73,14 +73,12 @@ Set up a server-based redirect for Facebook's oauth to connect to, such as [Fire
 
 ### Step 2
 
-Follow the [Facebook Login for iOS](https://developers.facebook.com/docs/facebook-login/ios) instructions, steps 1-4, including:
+Follow steps 1, 3, and 4 of the [Facebook Login for iOS](https://developers.facebook.com/docs/facebook-login/ios) instructions, including:
 
-- Creating or selecting a Facebook app to link
-- Downloading the SDK
-- Adding Login Kit to your project in Xcode (run `$ open ios/Runner.xcodeproj/` to open your project in Xcode to add the SDK)
-- Add your bundle identifier
-- Enable Single Sign On (set to yes)
-- Configure your info.plist
+- FB Step 1: Create or select a Facebook app to link
+- FB Step 3a: Add your bundle identifier
+- FB Step 3b: Enable Single Sign On (set to yes)
+- FB Step 4: Configure your info.plist
 
 ## Getting Started
 

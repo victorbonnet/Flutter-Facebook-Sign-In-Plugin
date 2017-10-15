@@ -49,7 +49,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
                  } else if (fbResult.isCancelled) {
                      result(@"Cancelled");
                  } else {
-                     result(@"Logged in");
+                     FBSDKAccessToken *token = [FBSDKAccessToken currentAccessToken];
+                     result(token.tokenString);
                  }
              }];
         } else if ([@"checkFacebookLogin" isEqualToString:call.method]) {

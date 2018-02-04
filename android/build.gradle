@@ -35,6 +35,6 @@ repositories {
 }
 
 dependencies {
-    provided files('tmplibs/flutter.jar')
-    compile 'com.facebook.android:facebook-android-sdk:4.28.0'
+    compileOnly files('tmplibs/flutter.jar')
+    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
 }

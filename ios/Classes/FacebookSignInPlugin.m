@@ -41,7 +41,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         if ([@"login" isEqualToString:call.method]) {
             FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
             [login
-             logInWithReadPermissions: @[@"public_profile", @"email"]
+             logInWithReadPermissions: @[@"public_profile", @"email", @"user_friends"]
              fromViewController:controller
              handler:^(FBSDKLoginManagerLoginResult *fbResult, NSError *error) {
                  if (error) {
@@ -53,6 +53,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
                      result(token.tokenString);
                  }
              }];
+        } else if ([@"logout" isEqualToString:call.method]) {
+            result(@"TODO");
         } else if ([@"checkFacebookLogin" isEqualToString:call.method]) {
             if ([FBSDKAccessToken currentAccessToken]) {
                 FBSDKAccessToken *accessToken = [FBSDKAccessToken currentAccessToken];

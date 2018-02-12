@@ -49,7 +49,7 @@ public class FacebookSignInPlugin implements MethodCallHandler,
       //FacebookSdk.setAutoLogAppEventsEnabled(false);
       FacebookSdk.sdkInitialize(activity);
       LoginManager.getInstance().registerCallback(callbackManager, getCallback(result));
-      LoginManager.getInstance().logInWithReadPermissions(this.activity, Arrays.asList("public_profile", "user_friends"));
+      LoginManager.getInstance().logInWithReadPermissions(this.activity, Arrays.asList("public_profile", "user_friends", "email"));
     } else if (call.method.equals("logout")) {
       LoginManager.getInstance().logOut();
       result.success("Logged out");

@@ -6,9 +6,9 @@ class FacebookSignIn {
   static const MethodChannel _channel =
       const MethodChannel('facebook_sign_in');
 
-  static Future<String> get login =>
+  static Future<dynamic> get login =>
       _channel.invokeMethod("login");
 
-  static Future<String> get logout =>
+  static Future<dynamic> get logout =>
       _channel.invokeMethod("logout");
 }

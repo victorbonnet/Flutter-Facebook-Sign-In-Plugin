@@ -35,5 +35,5 @@ repositories {
 
 dependencies {
     compileOnly files('tmplibs/flutter.jar')
-    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
+    implementation 'com.facebook.android:facebook-login:4.28.0'
 }

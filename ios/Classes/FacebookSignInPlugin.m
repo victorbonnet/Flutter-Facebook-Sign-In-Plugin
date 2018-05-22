@@ -41,7 +41,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         if ([@"login" isEqualToString:call.method]) {
             FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
             [login
-             logInWithReadPermissions: @[@"public_profile", @"email", @"user_friends"]
+             logInWithReadPermissions: @[@"email"]
              fromViewController:controller
              handler:^(FBSDKLoginManagerLoginResult *fbResult, NSError *error) {
                  if (error) {
